@@ -1,9 +1,48 @@
+<!-- D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\Z-NOTES-\terminal-commands--260124-.md -->
+
+
+
+
+---------------------------------------------------
 
 
 
 
 
 ---------------------------------------------------
+
+
+
+
+D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\main.dart
+
+D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\self-notes\cha-\A12-14--code-files--comparision--vs--wger-flutter--260124-.md
+
+
+-----------------------------------------------------------
+
+D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\self-notes\cha-\A12-19--DJANGO-TO-FLUTTER--data--files--mapping--260124-.md
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+"D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\SCREENSHOT-\april-24--routine-screen--day-\Screenshot_1769253979.png"
+"D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\SCREENSHOT-\april-24--routine-screen--day-\Screenshot 2026-01-24 171032.png"
+"D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\SCREENSHOT-\april-24--routine-screen--day-\Screenshot (18103).png"
+
+
+---------------------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------
+
 
 
 
@@ -297,7 +336,21 @@ touch lib/widgets/gym_mode/gym_mode_widget.dart \
 ---------------------------------------------------
 
 
+saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/flutter/EXCER-DJANGO-FLUTTER-PROVIDER-/2026-/SRC-/CODE-/excerfit (master)
+$ git add .
 
+saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/flutter/EXCER-DJANGO-FLUTTER-PROVIDER-/2026-/SRC-/CODE-/excerfit (master)
+$ git commit -am "models for dart added. providers done"
+[master be40364] models for dart added. providers done
+ 14 files changed, 1062 insertions(+), 110 deletions(-)
+ create mode 100644 lib/models/day.dart
+ create mode 100644 lib/models/entry.dart
+ create mode 100644 lib/models/routine.dart
+ create mode 100644 lib/models/slot.dart
+ create mode 100644 lib/providers/auth_provider.dart
+ create mode 100644 lib/providers/days_provider.dart
+ create mode 100644 lib/providers/routine_provider.dart
+ create mode 100644 lib/services/api_client.dart
 
 
 ---------------------------------------------------

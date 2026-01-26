@@ -18,8 +18,11 @@ class Slot {
       id: json['id'],
       order: json['order'],
       comment: json['comment'] ?? '',
-      entries: (json['entries'] as List?)
-              ?.map((e) => Entry.fromJson(e))
+      entries:
+          (json['entries'] as List?)
+              ?.map(
+                (e) => Entry.fromJson(e), //
+              )
               .toList() ??
           [],
     );
@@ -34,12 +37,7 @@ class Slot {
     };
   }
 
-  Slot copyWith({
-    int? id,
-    int? order,
-    String? comment,
-    List<Entry>? entries,
-  }) {
+  Slot copyWith({int? id, int? order, String? comment, List<Entry>? entries}) {
     return Slot(
       id: id ?? this.id,
       order: order ?? this.order,

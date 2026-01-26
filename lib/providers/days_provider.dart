@@ -74,3 +74,6 @@ class DaysProvider with ChangeNotifier {
     }
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\providers\days_provider.dart
