@@ -4,6 +4,8 @@ import '../providers/days_provider.dart';
 import '../screens/day_detail_screen.dart';
 import '../screens/gym_mode_screen.dart';
 
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\widgets\day_list_widget.dart
+
 class DayListWidget extends StatelessWidget {
   final int? limit;
 
@@ -103,3 +105,6 @@ class DayListWidget extends StatelessWidget {
     );
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\widgets\day_list_widget.dart

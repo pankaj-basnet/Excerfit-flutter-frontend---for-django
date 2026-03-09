@@ -4,7 +4,8 @@ import 'package:logging/logging.dart';
 
 class ApiClient {
   // static const String baseUrl = 'http://localhost:8000';
-  static const String baseUrl = 'http://192.168.1.89:8000';
+  // static const String baseUrl = 'http://192.168.1.89:8000';
+  static const String baseUrl = 'http://192.168.1.70:8000';
   final _logger = Logger('ApiClient');
   
   String? _accessToken;
@@ -146,3 +147,6 @@ class ApiClient {
     }
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\services\api_client.dart

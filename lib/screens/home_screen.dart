@@ -1,3 +1,4 @@
+import 'package:excerfit/screens/routine_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
@@ -53,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
       const DashboardTab(),
       const WorkoutsTab(),
       const RoutinesTab(),
+      const RoutineListScreen(),
     ];
 
     return Scaffold(
@@ -79,6 +81,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
             label: 'Routines',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_today),
+            label: 'Routines-2',
           ),
         ],
         currentIndex: _selectedIndex,
@@ -141,3 +147,6 @@ class RoutinesTab extends StatelessWidget {
     );
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\screens\home_screen.dart

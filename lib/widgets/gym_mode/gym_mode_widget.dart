@@ -96,3 +96,6 @@ class _GymModeWidgetState extends State<GymModeWidget> {
     );
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\widgets\gym_mode\gym_mode_widget.dart

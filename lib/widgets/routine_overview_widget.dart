@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../providers/routine_provider.dart';
 
+
 class RoutineOverviewWidget extends StatelessWidget {
   final bool expanded;
 
@@ -108,3 +109,6 @@ class RoutineOverviewWidget extends StatelessWidget {
     );
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\widgets\routine_overview_widget.dart

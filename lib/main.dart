@@ -79,7 +79,8 @@ class ExcerApp extends StatelessWidget {
               }
               return auth.isAuthenticated
                   ? const HomeScreen()
-                  : const LoginScreen();
+                  // : const LoginScreen();
+                  : const HomeScreen();
             },
           ),
           routes: {

@@ -102,7 +102,7 @@ class _ExercisePageState extends State<ExercisePage> {
                     textAlign: TextAlign.center,
                   ),
                   if (widget.slotComment.isNotEmpty) ...[
-                    const SizedBox(height: 4),
+                    const SizedBox(height: 4),  
                     Text(
                       widget.slotComment,
                       style: Theme.of(context).textTheme.bodyMedium,
@@ -212,3 +212,6 @@ class _ExercisePageState extends State<ExercisePage> {
     );
   }
 }
+
+
+// D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\widgets\gym_mode\exercise_page.dart
