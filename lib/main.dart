@@ -1,3 +1,4 @@
+import 'package:excerfit/screens/add_exercise_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:logging/logging.dart';
@@ -18,7 +19,9 @@ void main() {
 void _setupLogging() {
   Logger.root.level = Level.ALL;
   Logger.root.onRecord.listen((record) {
-    print('${record.level.name}: ${record.time} [${record.loggerName}] ${record.message}');
+    print(
+      '${record.level.name}: ${record.time} [${record.loggerName}] ${record.message}',
+    );
   });
 }
 
@@ -51,10 +54,7 @@ class ExcerApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
             useMaterial3: true,
-            appBarTheme: const AppBarTheme(
-              centerTitle: true,
-              elevation: 0,
-            ),
+            appBarTheme: const AppBarTheme(centerTitle: true, elevation: 0),
             // cardTheme: CardTheme(
             //   elevation: 2,
             //   shape: RoundedRectangleBorder(
@@ -69,25 +69,28 @@ class ExcerApp extends StatelessWidget {
               ),
             ),
           ),
-          home: FutureBuilder<bool>(
-            future: auth.tryAutoLogin(),
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Scaffold(
-                  body: Center(child: CircularProgressIndicator()),
-                );
-              }
-              return auth.isAuthenticated
-                  ? const HomeScreen()
-                  // : const LoginScreen();
-                  : const HomeScreen();
-            },
-          ),
+          home:
+              // FutureBuilder<bool>(
+              //   future: auth.tryAutoLogin(),
+              //   builder: (context, snapshot) {
+              //     if (snapshot.connectionState == ConnectionState.waiting) {
+              //       return const Scaffold(
+              //         body: Center(child: CircularProgressIndicator()),
+              //       );
+              //     }
+              //     return auth.isAuthenticated
+              //         ? const HomeScreen()
+              //         // : const LoginScreen();
+              // : const HomeScreen();
+              //   },
+              // ),
+              const HomeScreen(),
           routes: {
             LoginScreen.routeName: (_) => const LoginScreen(),
             HomeScreen.routeName: (_) => const HomeScreen(),
             DayDetailScreen.routeName: (_) => const DayDetailScreen(),
             GymModeScreen.routeName: (_) => const GymModeScreen(),
+            AddExerciseScreen.routeName: (_) => const AddExerciseScreen(),
           },
         ),
       ),

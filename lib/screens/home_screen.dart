@@ -28,8 +28,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadData() async {
     final daysProvider = Provider.of<DaysProvider>(context, listen: false);
-    final routineProvider = Provider.of<RoutineProvider>(context, listen: false);
-    
+    final routineProvider = Provider.of<RoutineProvider>(
+      context,
+      listen: false,
+    );
+
     await daysProvider.fetchDays();
     await routineProvider.fetchRoutine(1); // Load default routine
   }
@@ -58,19 +61,26 @@ class _HomeScreenState extends State<HomeScreen> {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('EXCER'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: _logout,
-          ),
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: const Text('EXCER'),
+      //   actions: [
+      //     IconButton(
+      //       icon: const Icon(Icons.logout),
+      //       onPressed: _logout,
+      //     ),
+      //   ],
+      // ),
       body: screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        // backgroundColor: Colors.amber,
         items: const [
           BottomNavigationBarItem(
+            // backgroundColor: Color.from(
+            //   alpha: 0.5,
+            //   red: 0.0,
+            //   green: 0.5,
+            //   blue: 0.5,
+            // ),
             icon: Icon(Icons.dashboard),
             label: 'Dashboard',
           ),
@@ -102,7 +112,10 @@ class DashboardTab extends StatelessWidget {
     return RefreshIndicator(
       onRefresh: () async {
         await Provider.of<DaysProvider>(context, listen: false).fetchDays();
-        await Provider.of<RoutineProvider>(context, listen: false).fetchRoutine(1);
+        await Provider.of<RoutineProvider>(
+          context,
+          listen: false,
+        ).fetchRoutine(1);
       },
       child: ListView(
         padding: const EdgeInsets.all(16),
@@ -127,7 +140,8 @@ class WorkoutsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
-      onRefresh: () => Provider.of<DaysProvider>(context, listen: false).fetchDays(),
+      onRefresh: () =>
+          Provider.of<DaysProvider>(context, listen: false).fetchDays(),
       child: const DayListWidget(),
     );
   }
@@ -139,7 +153,8 @@ class RoutinesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
-      onRefresh: () => Provider.of<RoutineProvider>(context, listen: false).fetchRoutine(1),
+      onRefresh: () =>
+          Provider.of<RoutineProvider>(context, listen: false).fetchRoutine(1),
       child: const SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: RoutineOverviewWidget(expanded: true),
@@ -147,6 +162,5 @@ class RoutinesTab extends StatelessWidget {
     );
   }
 }
-
 
 // D:\src_dev\flutter\EXCER-DJANGO-FLUTTER-PROVIDER-\2026-\SRC-\CODE-\excerfit\lib\screens\home_screen.dart
