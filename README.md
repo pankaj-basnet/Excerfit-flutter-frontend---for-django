@@ -24,10 +24,10 @@ It uses a clean UI to show you exactly what exercises you need to do, how many s
 
 ## 📱 App Screenshots
 
-| Workout Preview | Exercise Details | Workout Summary |
+| Workout Details | Exercise List | Workout Summary |
 | :---: | :---: | :---: |
 | <img src="assets/Screenshot 2026-01-24 170815.png" width="250"> | <img src="assets/Screenshot_1769253745.png" width="250"> | <img src="assets/Screenshot_1769253873.png" width="250"> |
-| *Today's Plan* | *Detailed View* | *Session Complete* |
+<!-- | *Today's Plan* | *Detailed View* | *Session Complete* | -->
 
 -----
 
@@ -55,7 +55,7 @@ The app's logic is centered around the `DayDetailScreen`. Here’s a quick look 
 
 ## 🏁 Getting Started
 
-1.  Clone this repo: `git clone https://github.com/yourusername/your-repo-name.git`
+1.  Clone this repo: `git clone https://github.com/pankaj-basnet/Excerfit-flutter-frontend---for-django.git`
 2.  Get packages: `flutter pub get`
 3.  Run the app: `flutter run`
 
