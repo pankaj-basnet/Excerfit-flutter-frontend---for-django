@@ -1,3 +1,4 @@
+import 'package:excerfit/screens/nutritional_plans_screen.dart';
 import 'package:excerfit/screens/routine_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -56,7 +57,8 @@ class _HomeScreenState extends State<HomeScreen> {
     final List<Widget> screens = [
       const DashboardTab(),
       const WorkoutsTab(),
-      const RoutinesTab(),
+      // const RoutinesTab(),
+      const NutritionalPlansScreen(),
       const RoutineListScreen(),
     ];
 
